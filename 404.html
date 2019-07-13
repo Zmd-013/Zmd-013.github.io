@@ -23,7 +23,7 @@ ga('send', 'pageview');
     
     
     
-    <title>归档: 2019/7 | 淡聊人生</title>
+    <title>zmd | 404 了... | 淡聊人生</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="theme-color" content="#3F51B5">
@@ -31,12 +31,13 @@ ga('send', 'pageview');
     
     <meta name="keywords" content>
     <meta property="og:type" content="website">
-<meta property="og:title" content="淡聊人生">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
+<meta property="og:title" content="zmd | 404 了...">
+<meta property="og:url" content="http://yoursite.com/404.html">
 <meta property="og:site_name" content="淡聊人生">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-07-13T18:52:30.840Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="淡聊人生">
+<meta name="twitter:title" content="zmd | 404 了...">
     
         <link rel="alternate" type="application/atom+xml" title="淡聊人生" href="/atom.xml">
     
@@ -52,7 +53,7 @@ ga('send', 'pageview');
 <body>
     <div id="loading" class="active"></div>
 
-    <aside id="menu"  >
+    <aside id="menu" class="hide" >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -78,7 +79,7 @@ ga('send', 'pageview');
               </a>
             </li>
         
-            <li class="waves-block waves-effect active">
+            <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 归档
@@ -117,7 +118,7 @@ ga('send', 'pageview');
         <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
           <i class="icon icon-lg icon-navicon"></i>
         </a>
-        <div class="flex-col header-title ellipsis">归档</div>
+        <div class="flex-col header-title ellipsis">zmd | 404 了...</div>
         
         <div class="search-wrap" id="search-wrap">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
@@ -136,10 +137,10 @@ ga('send', 'pageview');
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header page-header">
 
     <div class="container fade-scale">
-        <h1 class="title">归档</h1>
+        <h1 class="title">zmd | 404 了...</h1>
         <h5 class="subtitle">
             
         </h5>
@@ -150,43 +151,69 @@ ga('send', 'pageview');
 
 </header>
 
-<div class="container body-wrap fade">
-    
 
-    
+<div class="container body-wrap">
+    <article class="page-article fade" itemprop="blogPage">
+        <div class="post-content page-content" id="page-content" itemprop="pageContent">
             
-            <h3 class="archive-separator">July, 2019</h3>
-            <div class="waterfall">
+<script src="/js/404.js"></script>
+
+
+        </div>
+
+        
+
+        
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: 'd925e572baa4080b5802',
+          clientSecret: 'f9ad80ec60798c871f3c6489df013591c3bc8a63',
+          repo: 'Zmd-013.github.io',
+          owner: 'Zmd-013',
+          admin: ['Zmd-013'],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+    </article>
     
 
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2019-07-14 00:50:22" datetime="2019-07-13T16:50:22.000Z"  itemprop="datePublished">2019-07-14</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2019/07/14/我的第一篇博客文章/">我的第一篇博客文章</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-
-    
-    </div>
-
-    
 </div>
 
         <footer class="footer">
@@ -228,7 +255,7 @@ ga('send', 'pageview');
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/archives/2019/07/&title=淡聊人生&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/404.html&title=《zmd | 404 了...》 — 淡聊人生&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -238,22 +265,22 @@ ga('send', 'pageview');
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/archives/2019/07/&title=淡聊人生&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/404.html&title=《zmd | 404 了...》 — 淡聊人生&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/archives/2019/07/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/404.html" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=淡聊人生&url=http://yoursite.com/archives/2019/07/&via=http://yoursite.com" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《zmd | 404 了...》 — 淡聊人生&url=http://yoursite.com/404.html&via=http://yoursite.com" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/archives/2019/07/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/404.html" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -264,7 +291,7 @@ ga('send', 'pageview');
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3awa7CMAwEQP7/p3nSu6K2azsNRZqcECrtlMMqtvN6xev9vz4/H135uc7vuXjh4uKOue/TdXTr8yuPvjm6Z2LAxcXdz03CKw+pCf3ChouL+zDuEeL8+3M6Li7ur3OPiHmdktBxcXGfw02KnzyMqq96S62Gi4u7plopN0xXfd7U38XFxR1PJSaB0mukXjwdFxd3C/d8TJKUInkTpPcyrzkCFxe3yE1Gp5Po6e25yhGGi4u7lNtrbaw6rpEXRYf/MS4u7g3c6kZkvtGZbHpwcXH3c3sxlIRdEovJc3Fxcb/FnT+mNyxZPA3GxcUdc6tbk2qoVYe45YtwcXGXcnuHLfKOS3kTU50C4eLi3sBN2iLV18ibJri4uE/m5huX8pQmKJmSjREuLu5Obl6o5EOXCTd6Li4u7s3c/AF5qF00PYu/wsXF/RZ3HlirCqEoyHBxcbdw81U9vFU9rtGcxOLi4i7lTuaYOWLeXim/DC4u7pibh041FnsDmItow8XF3cjNw6t5pmNe/ODi4j6Smx/OyKOqXBTh4uI+nttrjPZeAxcXdz+3Fy7v1qq2QpptEVxc3AG31zDNy5Vqw7RXVuHi4i7i/gGh0hsxpUICpQAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3aQYrDMAwF0Nz/0h2Y1cBQ90ty3RSeV6E04TkLYX3luuL1+F3r62d3/V3/f7/esXBxccfcx3KtWVXKettrAy4u7nlu8uhdZav6OnBxce/MTUrY+snVoxIuLu79uc/K2Zq+vgsXF/fO3KT5mRxW8pZpW6+Gi4s74O4KTCfXH8h3cXFxW1OJvKglpecxXri4uGe4eZzRiz6TgLV8VMLFxT3CrZ4oqk1O/nsSweDi4n6KOx+LrkPVavl7gcbFxd3KrUai+cgkH8PkLwgXF/cMd1JoJmPU/NhUnv/g4uKOudUPKXrjlnmjdU2+DsPFxS1yq0PQ3vYmAQouLu55bn5wyRuY3iuIIhhcXNwj3HyMUW1veoMTXFzcO3B3PaiXx5RfCi4u7hHu5GgSDTxaxfHF83Fxcd/M7e1vvo3qEBcXF/c8d5K2RoeSXo6Li4v7UW6+qmOVaglrTmJxcXG3cqsFpfqfKn3Xxxy4uLhzblK8epOZvLEpFDhcXNyD3F54UR2r9JofXFzcO3Org9h8Y4VCiYuL+1XcfIDa2wYuLu55bu/4Uh2c9KKQZiyCi4s74E4C0/UGeoFpHrvg4uK+gfsDY82fZnFnuKEAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
