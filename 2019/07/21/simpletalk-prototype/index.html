@@ -39,7 +39,7 @@ ga('send', 'pageview');
 <meta property="og:description" content="前言从事H5游戏开发，有几年了，大多数情况都是用TypeScript来开发。TypeScript是Javascript的超集，所以对Javascript一些关键性知识，也不能不去了解。这里就准备用我所理解的知识，来说一下，希望对前端开发者有些帮助(特别是从一些面向对象语言转过来的前端，比如C#,JAVA)。如果有读者发现错误的知识点，烦请及时指正，不尽言谢！也欢迎转载，如有转载，请标明来源！ 看完">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://yoursite.com/images/javascript/simpletalk-prototype/JsLinkList.jpg">
-<meta property="og:updated_time" content="2019-07-21T09:39:54.881Z">
+<meta property="og:updated_time" content="2019-07-21T09:47:37.856Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="简谈Javascript原型链">
 <meta name="twitter:description" content="前言从事H5游戏开发，有几年了，大多数情况都是用TypeScript来开发。TypeScript是Javascript的超集，所以对Javascript一些关键性知识，也不能不去了解。这里就准备用我所理解的知识，来说一下，希望对前端开发者有些帮助(特别是从一些面向对象语言转过来的前端，比如C#,JAVA)。如果有读者发现错误的知识点，烦请及时指正，不尽言谢！也欢迎转载，如有转载，请标明来源！ 看完">
@@ -241,7 +241,7 @@ ga('send', 'pageview');
 <h2 id="术语prototype与-proto"><a href="#术语prototype与-proto" class="headerlink" title="术语prototype与__proto__"></a>术语prototype与__proto__</h2><ul>
 <li><p><code>prototype</code>是对于<code>类</code>来说的。<br>依据类的prototype，来制定类的结构规范，哪些方法需要放在prototype上面供子类继承使用，哪些不用让子类知道，仅写在类的内部。<br>放在prototype上面，达到了继承代码重用的目的。放在内部，达到了私有封装的效果。</p>
 </li>
-<li><p><code>__proto__</code>是对于类的<code>实例</code>来说的。<br>依我个人经验来说，实例仅是是使用<code>__proto__</code>(readonly)，不对其做更改，若想对其指手画脚，则需要把实例的类请来，重新教育它一下，要走流程的。类似于网上的留言：是直接喷，还是走流程呢？这里是走流程的。不走流程也行，但是编写出来的代码会特别乱。</p>
+<li><p><code>__proto__</code>是对于类的<code>实例</code>来说的。类的实例的__proto__指向类的原型的引用。<br>依我个人经验来说，实例仅是是使用<code>__proto__</code>(readonly)，不对其做更改，若想对其指手画脚，则需要把实例的类请来，重新教育它一下，要走流程的。类似于网上的留言：是直接喷，还是走流程呢？这里是走流程的。不走流程也行，但是编写出来的代码会特别乱。</p>
 </li>
 </ul>
 <h2 id="代码实践"><a href="#代码实践" class="headerlink" title="代码实践"></a>代码实践</h2><p>下面的代码标记了注释，可以随意的更改。在chrome浏览器的控制台，打开console栏，copy下面代码，按回车键看输出。</p>
@@ -264,7 +264,7 @@ ga('send', 'pageview');
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2019-07-21T09:39:54.881Z" itemprop="dateUpdated">2019-07-21 17:39:54</time>
+    Last updated: <time datetime="2019-07-21T09:47:37.856Z" itemprop="dateUpdated">2019-07-21 17:47:37</time>
 </span><br>
 
 
